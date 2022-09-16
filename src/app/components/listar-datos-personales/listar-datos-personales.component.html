@@ -1,0 +1,42 @@
+<div class="row mt3">
+    <div class="col lg6">
+        <h3>lista de Datos Personales</h3>
+    </div>
+
+    <div class="col lg6">
+        <button class="btn btn-prymary float-end">Agregar Persona</button>
+    </div>
+
+</div>
+
+<table class="table table-hover mt-3">
+    <thead>
+        <tr>
+            <td>identificacion</td>
+            <td>nombre</td>
+            <td>apellido</td>
+            <td>direccion</td>
+            <td>email</td>
+            <td>telefono</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let pers of listDatosPer">
+        <td>{{pers.identificacion}}</td>
+        <td>{{pers.nombre}}</td>
+        <td>{{pers.apellido}}</td>
+        <td>{{pers.direccion}}</td>
+        <td>{{pers.email}}</td>
+        <td>{{pers.telefono}}</td>
+       
+    
+    </tr>
+ 
+</tbody>
+</table>
+
+<div *ngIf="listDatosPer.length == 0" class="row mt5">
+    <h5>No hay ningun comentario registrado</h5>
+</div>
