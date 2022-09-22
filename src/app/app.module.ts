@@ -9,6 +9,7 @@ import { VerComentariosComponent } from './components/ver-comentarios/ver-coment
 import { ListarDatosPersonalesComponent } from './components/listar-datos-personales/listar-datos-personales.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BusquedasComponent } from './components/busquedas/busquedas.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AgregarEditarComentarioComponent,
     ListarComentariosComponent,
     VerComentariosComponent,
-    ListarDatosPersonalesComponent
+    ListarDatosPersonalesComponent,
+    BusquedasComponent
   ],
   imports: [
     BrowserModule,
